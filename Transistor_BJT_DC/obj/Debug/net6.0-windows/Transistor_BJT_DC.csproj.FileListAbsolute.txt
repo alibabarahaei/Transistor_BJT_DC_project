@@ -1,0 +1,112 @@
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.exe
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.deps.json
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.runtimeconfig.json
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.pdb
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC_MarkupCompile.cache
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC_MarkupCompile.lref
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.g.resources
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.AssemblyInfo.cs
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\refint\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.pdb
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.genruntimeconfig.cache
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\ref\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.dll
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\App.baml
+C:\Users\user\Desktop\New folder\Transistor_BJT_DC\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.csproj.CopyComplete
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.exe
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.deps.json
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.runtimeconfig.json
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\Transistor_BJT_DC.pdb
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BootstrapIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.BoxIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Codicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Coolicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Entypo.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.EvaIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FeatherIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FileIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.FontAwesome.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontaudio.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Fontisto.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.ForkAwesome.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Ionicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.JamIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialDesign.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.MaterialLight.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Microns.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Modern.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Octicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PicolIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.PixelartIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RPGAwesome.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RadixIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.RemixIcon.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.SimpleIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Typicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Unicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.VaadinIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.WeatherIcons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.Zondicons.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\bin\Debug\net6.0-windows\MahApps.Metro.IconPacks.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC_MarkupCompile.cache
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC_MarkupCompile.lref
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\App.baml
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.g.resources
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.AssemblyInfo.cs
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.csproj.CopyComplete
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\refint\Transistor_BJT_DC.dll
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.pdb
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\Transistor_BJT_DC.genruntimeconfig.cache
+C:\Users\user\Desktop\New folder (2)\electronics\Transistor_BJT_DC\obj\Debug\net6.0-windows\ref\Transistor_BJT_DC.dll

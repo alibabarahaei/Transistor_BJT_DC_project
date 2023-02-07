@@ -1,0 +1,243 @@
+﻿<Window x:Class="Transistor_BJT_DC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:Transistor_BJT_DC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000" ResizeMode="NoResize" AllowsTransparency="True"
+        WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+    </Window.Resources>
+
+    <Border Background="#EFF2F7" CornerRadius="40" MouseDown="Border_MouseDown">
+        <Grid>
+            <Grid   Width="100" Height="50" Margin="33,22,817,458"  >
+                <Border Margin="36,24,-36,-24">
+                    <StackPanel Margin="0 10 0 30">
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" >
+                            <Ellipse Fill="#ff6258" Width="10" Height="10" PreviewMouseLeftButtonDown="exit" />
+                            <Ellipse Fill="#ffbf2f" Width="10" Height="10" Margin="7 0 7 0" ></Ellipse>
+                            <Ellipse Fill="#2acb42" Width="10" Height="10" ></Ellipse>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+            </Grid>
+
+            <Border  CornerRadius="40 40 0  0 " Margin="0,0,0,518">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#3AA9AD" Offset="0" />
+                        <GradientStop Color="#3AADA1" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Border  CornerRadius="0 40 40 0 " Margin="970,3,0,-3">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#3AA9AD" Offset="0" />
+                        <GradientStop Color="#3AADA1" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Border  CornerRadius="40 0 0 40 " Margin="-1,0,968,-2">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#3AA9AD" Offset="0" />
+                        <GradientStop Color="#3AADA1" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Border  CornerRadius="0 0 40 40 "  Margin="-1,521,1,-3">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Color="#3AA9AD" Offset="0" />
+                        <GradientStop Color="#3AADA1" Offset="1" />
+                    </LinearGradientBrush>
+                </Border.Background>
+            </Border>
+            <Grid Height="350" Margin="83,88,699,62" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="VCC : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox  Name="VCC_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="VCC_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="RC : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="RC_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="RC_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="RB : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="RB_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial  Name="RB_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="3" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="RE : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="RE_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="RE_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="4" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="RB1 : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="RB1_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="RB1_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="5" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="RB2 : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="RB2_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="RB2_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+
+            </Grid>
+            <Grid Height="150" Width="200" Margin="251,0,0,0" VerticalAlignment="Center"  HorizontalAlignment="Left" >
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"  VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="beta : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="beta_textBox"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="beta_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="1" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="hfe : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox Name="hfe_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="hfe_Icon" Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+                <Grid Grid.Row="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="35"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="VEE : "  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"  VerticalAlignment="Center" />
+                    <TextBox  Name="VEE_textBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Width="100" Grid.Column="1" Foreground="Gray" Style="{StaticResource filterTextBox}"   />
+                    <Icon:PackIconMaterial Name="VEE_Icon"  Visibility="Hidden" Grid.Column="2" Kind="Close" Width="15" Height="15" VerticalAlignment="Center"  Foreground="#D61355"  HorizontalAlignment="Center"  Margin="0 0 0 0" />
+                </Grid>
+
+
+            </Grid>
+
+            <Grid Height="60"  Margin="248,405,-248,85"  ZIndex="5">
+                <Border  HorizontalAlignment="Center" BorderBrush="#DEE4EC" BorderThickness="1" CornerRadius="5" Padding="5" Background="#ffffff" Margin="0 10 10 10">
+                    <StackPanel Orientation="Horizontal">
+                        <Button Style="{StaticResource pagingButton}" PreviewMouseLeftButtonDown="back_MouseLeftButtonDown">
+                            <Icon:PackIconMaterial Kind="ChevronLeft" Style="{StaticResource pagingButtonIcon}"/>
+                        </Button>
+                        <Rectangle Width="1" Fill="#DEE4EC" Margin="3 7"/>
+
+                        <Button  Name="B_N_button"  Style="{StaticResource pagingButton}" Content="1" Background="#4EB1B6" Foreground="#ffffff"/>
+
+
+                        <Rectangle Width="1" Fill="#DEE4EC" Margin="3 7"/>
+                        <Button Style="{StaticResource pagingButton}" PreviewMouseLeftButtonDown="next_MouseLeftButtonDown">
+                            <Icon:PackIconMaterial Kind="ChevronRight" Style="{StaticResource pagingButtonIcon}"/>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid ZIndex="4" >
+                <TextBlock Name="mode_text" Width="50" Height="50" Text="NPN"  FontSize="13" FontWeight="SemiBold"  Foreground="#878787"   Margin="313,354,637,146" />
+                <CheckBox Name="mode_checkbox" FontSize="26" Margin="300 230 0 0" PreviewMouseLeftButtonDown="Checkmode_checkbox" ></CheckBox>
+            </Grid>
+            <Grid ZIndex="2">
+                <Border Margin="517,90,50,110" CornerRadius="20"  Padding="10">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#3AB19B" Offset="0" />
+                            <GradientStop Color="#3AB19B" Offset="1" />
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Grid Background="#EFF2F7">
+                        <Image Margin="0,1,0,-1"  Name="ImageBiasing">
+                            <Image.Source >
+                                <BitmapImage   UriSource="/images/BJT_13.png" />
+                            </Image.Source>
+                        </Image>
+                    </Grid>
+                </Border>
+            </Grid>
+            <Grid Width="450" Height="100" Margin="58,421,492,29">
+                <DataGrid x:Name="answersDataGrid" RowStyle="{DynamicResource DataGridRowStyle1}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}"   Style="{DynamicResource DataGridStyle1}">
+                    <DataGrid.Columns  >
+                        <DataGridTextColumn  ElementStyle="{StaticResource Centering}"  Header="VBE" Binding="{Binding VBE}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn  ElementStyle="{StaticResource Centering}" Header="VCE" Binding="{Binding VCE}" IsReadOnly="True" Width="*"/>
+                        <DataGridTextColumn  ElementStyle="{StaticResource Centering}" Header="IE" Binding="{Binding IE}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn  ElementStyle="{StaticResource Centering}" Header="IB" Binding="{Binding IB}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn  ElementStyle="{StaticResource Centering}" Header="IC" Binding="{Binding IC}" IsReadOnly="True" Width="*" />
+                        <DataGridTextColumn  ElementStyle="{StaticResource Centering}" Header="Mode" Binding="{Binding Mode}" IsReadOnly="True" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+            <Grid>
+                <Button  Style="{StaticResource addButton}" Margin="671,468,0,0"  VerticalAlignment="Top" HorizontalAlignment="Left" PreviewMouseLeftButtonDown="check_MouseLeftButtonDown">
+                    <StackPanel Orientation="Horizontal">
+                        <Icon:PackIconMaterial Kind="Check" VerticalAlignment="Center" Margin="0 1 8 0" Width="11" Height="11"/>
+                        <TextBlock Text="Check"/>
+                    </StackPanel>
+                </Button>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>
