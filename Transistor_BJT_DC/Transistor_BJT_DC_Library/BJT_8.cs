@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -37,7 +37,14 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public bool Check_Active_Mode()
         {
             //default in active mode
-            VBE = 0.7;
+            if (istransistor_PNP==false)
+            {
+                VBE = 0.7;
+            }
+            else
+            {
+                VBE = -0.7;
+            }
             //default in active mode
 
             IB = (VCC - VBE) / (RB + (beta + 1) * (RC + RE)); // With considering IB . 
@@ -46,7 +53,8 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             VCE = (VCC) - ((beta + 1) / beta) * (IC) * (RC + RE); // With considering IB . 
             VC = (VCC) - ((beta + 1) / beta) * IC * RC; // Not Sure !
             VE = IE * RE;
-
+            if (istransistor_PNP==false)
+            {
             if (VCE >= 0.2 && IB > 0 && IC > 0 && IE > 0)
             {
                 return true;
@@ -55,13 +63,42 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             {
                 return false;
             }
+            }
+            else
+            {
+                if (VCE <= -0.2 && IB < 0 && IC < 0 && IE < 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
 
         }
         public bool Check_Saturation_Mode()
         {
             //default in saturation mode
-            VBE = 0.8;
-            VCE = 0.2;
+            if (istransistor_PNP == false)
+            {
+
+                //default in saturation mode
+                VBE = 0.8;
+                VCE = 0.2;
+                //default in saturation mode
+
+
+            }
+            else
+            {
+                //default in saturation mode
+                VBE = -0.8;
+                VCE = -0.2;
+                //default in saturation mode
+
+            }
             //default in saturation mode
 
             IB = (VCC - VBE) / (RB + (beta + 1) * (RC + RE)); // With considering IB . 
@@ -70,20 +107,49 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             IBmin = IC / hfe;
             VBC = VBE - VCE;
 
-            if (IB > IBmin && IB > 0 && IC > 0 && IE > 0)
+            if (istransistor_PNP == false)
             {
-                return true;
+
+
+                if (IB > IBmin && IB > 0 && IC > 0 && IE > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
             }
             else
             {
-                return false;
+                if (IB < IBmin && IB < 0 && IC < 0 && IE < 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+
             }
 
         }
         public bool Check_CutOff_Mode()
         {
-            VBE = 0.7;
-            if (VBE < 0.7) //Not Sure!
+            if (istransistor_PNP==false)
+            {
+                VBE = 0.7;
+            }
+            else
+            {
+                VBE = -0.7;
+            }
+            IB = (VCC - VBE) / (RB + (beta + 1) * (RC + RE));
+            VBE = VCC - ( IC + IB )* RC - (IB*RB) - (IB + IC) * RE;
+            if (istransistor_PNP==false)
+            {
+                if (VBE < 0.7||IB == 0) 
             {
                 return true;
             }
@@ -91,6 +157,19 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             {
                 return false;
             }
+            }
+            else
+            {
+                if (VBE > -0.7||IB == 0) 
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            }
+
 
         }
 
