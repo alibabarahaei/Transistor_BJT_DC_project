@@ -1,8 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 {
 
 
-    public class BJT_17
+    public class BJT_17 : BJT
     {
         public bool istransistor_PNP = false;
 
@@ -27,6 +33,14 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public double IE;
         public double VCE;
         public double ICsat;
+        double[] data = new double[2];
+
+        public void solve(double a1, double b1, double c1, double a2, double b2, double c2)
+        {
+
+            data[0] = (c1 * b2 - b1 * c2) / (a1 * b2 - b1 * a2);
+            data[1] = (a1 * c2 - c1 * a2) / (a1 * b2 - b1 * a2);
+        }
         public bool Check_Active_Mode()
         {
             if (istransistor_PNP == false)
@@ -37,7 +51,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             {
                 VBE = -0.7;
             }
-            temp = 2 * VCC;
+            temp = VCC - VEE;
             VTH = ((RB1) / (RB1 + RB2) * temp) - VCC;
             RTH = (RB1 * RB2) / (RB1 + RB2);
             IB = ((VCC - VTH) - 0.7) / (RTH + (beta + 1) * RE);
@@ -87,19 +101,15 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             }
 
 
-            //when this one will be in saturation mode
-            temp = 2 * VCC;
-            VTH = ((RB1) / (RB1 + RB2) * temp) - VCC;
-            RTH = (RB1 * RB2) / (RB1 + RB2);
-            IB = ((VCC - VTH) - 0.7) / (RTH + (beta + 1) * RE);
-            IC = beta * IB;
-            ICsat = (2 * VCC) / (RC + RE);
-            VCE = 2 * VCC - IC * (RC + ((beta + 1) / beta) * RE);
-            IE = (VTH - (IB * RTH) - (0.7) - VEE) / RE;
+            solve(RE + RB, RE, VTH - 0.8 - VEE, RE, RC + RE, VCC - 0.2 - VEE);
+            IB = data[0];
+            IC = data[1];
 
             if (istransistor_PNP == false)
             {
-                if (VCE < 0.2 && ICsat < IC && IB > 0 && IC > 0 && IE > 0)
+                //I removed the condition which the vce >0.2 as we have defined that above
+
+                if (IC / IB < beta && IB > 0 && IC > 0 && IE > 0)
                 {
                     return true;
 
@@ -107,24 +117,24 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 else
                 {
                     return false;
+                    //if true the IB should be IBmin 
+
                 }
+
+
+
             }
             else
             {
                 if (VCE > 0.2 && ICsat > IC && IB < 0 && IC < 0 && IE < 0)
                 {
                     return true;
-
                 }
                 else
                 {
                     return false;
                 }
             }
-
-
-
-
 
         }
 
@@ -141,10 +151,10 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 
             VTH = ((RB2) / (RB1 + RB2) * (2 * VCC - VEE)) + VEE;
             IB = ((VCC - VTH) - 0.7) / (RTH + (beta + 1) * RE);
-            VBE = VCC - VTH - IB * (RTH + (beta + 1) * RE);
+            //VBE = VCC - VTH - IB*(RTH+(beta+1)*RE);
             if (istransistor_PNP == false)
             {
-                if (VBE < 0.7 || IB == 0)
+                if (IE < 0 || IB == 0 || VTH < 0.7)
                 {
 
                     return false;
@@ -158,7 +168,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             }
             else
             {
-                if (VBE > -0.7 || IB == 0)
+                if (IE > 0 || IB == 0 || VTH > -0.7)
                 {
 
                     return false;
@@ -174,4 +184,5 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         }
 
     }
+}
 }
