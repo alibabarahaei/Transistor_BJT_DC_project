@@ -47,10 +47,10 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             }
             IB = (VCC - VBE) / (RB);
             IC = beta * IB;
-            IE = 0.0;
-            VCE = (VCC) - (IC * RC) - (IE * RE);
+            IE = (beta + 1) * IB;
+            VCE = (VCC) - (IC * RC) ;
             VC = (VCC) - (IC * RC);
-            VE = IE * RE;
+            
             if (istransistor_PNP == false)
             {
                 if (VCE >= 0.2 && IB > 0 && IC > 0 && IE >= 0)

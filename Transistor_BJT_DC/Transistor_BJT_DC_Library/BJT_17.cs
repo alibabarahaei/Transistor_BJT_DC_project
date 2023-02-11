@@ -52,9 +52,9 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 VBE = -0.7;
             }
             temp = VCC - VEE;
-            VTH = ((RB1) / (RB1 + RB2) * temp) - VCC;
+            VTH = ((RB2) / (RB1 + RB2) * temp) - VCC;
             RTH = (RB1 * RB2) / (RB1 + RB2);
-            IB = ((VCC - VTH) - 0.7) / (RTH + (beta + 1) * RE);
+            IB = ((VCC - VTH) - VBE) / (RTH + (beta + 1) * RE);
             IC = beta * IB;
             VCE = 2 * VCC - IC * (RC + ((beta + 1) / beta) * RE);
 
