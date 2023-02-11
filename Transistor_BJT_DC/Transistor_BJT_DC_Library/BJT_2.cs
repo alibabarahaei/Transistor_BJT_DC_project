@@ -1,13 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 {
 
-    public class BJT_2: BJT
+    public class BJT_2 : BJT
     {
         public bool istransistor_PNP = false;      //false  --->  PNP       true  --->  NPN
 
@@ -42,10 +36,10 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public bool Check_Active_Mode()
         {
             //default in active mode
-            
-            
-            if(istransistor_PNP==false){VBE = 0.7;}
-            else{VBE = -0.7;}
+
+
+            if (istransistor_PNP == false) { VBE = 0.7; }
+            else { VBE = -0.7; }
             //default in active mode
 
             IB = (VCC - VBE) / (RB + ((beta + 1) * RC)); // With considering IB . 
@@ -54,16 +48,16 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             VCE = (VCC) - (((beta + 1) / beta) * (IC * RC)) - (IE * RE);
             VC = (VCC) - (((beta + 1) / beta) * (IC * RC));
             VE = IE * RE;
-            if (istransistor_PNP==false)
+            if (istransistor_PNP == false)
             {
                 if (VCE >= 0.2 && IB > 0 && IC > 0 && IE >= 0)
-                    {
-                return true;
-                    }
+                {
+                    return true;
+                }
                 else
-                    {
-                return false;
-                    }
+                {
+                    return false;
+                }
             }
             else
             {
@@ -82,9 +76,10 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public bool Check_Saturation_Mode()
         {
             //default in saturation mode
-            if(istransistor_PNP==false){      
-            VBE = 0.8;
-            VCE = 0.2;
+            if (istransistor_PNP == false)
+            {
+                VBE = 0.8;
+                VCE = 0.2;
             }
             else
             {
@@ -121,47 +116,46 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                     return false;
                 }
             }
-            }
+
 
 
         }
         public bool Check_CutOff_Mode()
-        {   
+        {
             //assume that we are in the active mode
-            if (istransistor_PNP==false)
+            if (istransistor_PNP == false)
             {
-                VBE = -0.7;
+                VBE = 0.7;
             }
             else
             {
-                VBE = 0.7; 
+                VBE = -0.7;
             }
 
             IB = (VCC - VBE) / (RB + ((beta + 1) * RC)); // With considering IB . 
 
-            VBE = VCC - IB*(RB + (beta + 1) * RC) ;
-            
-            if (istransistor_PNP==false)
+            VBE = VCC - IB * (RB + (beta + 1) * RC);
+            if (istransistor_PNP == false)
             {
-                if ( VCC == 0 || IB <0 ) //if the IB is negative, so the IE will follow 
-            {
-                return true;
-            }
+                if (VBE < 0.7 || IB == 0)
+                {
+                    return true;
+                }
                 else
-            {
-                return false;
-            }
+                {
+                    return false;
+                }
             }
             else
             {
-                if (VBE >= 0.7 || IB == 0) 
-            {
-                return true;
-            }
+                if (VBE >= 0.7 || IB == 0)
+                {
+                    return true;
+                }
                 else
-            {
-                return false;
-            }
+                {
+                    return false;
+                }
             }
 
 

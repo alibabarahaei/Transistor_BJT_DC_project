@@ -84,8 +84,8 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         {
             if(istransistor_PNP){ 
             //default in saturation mode
-                VBE = 0.8;
-                VCE = 0.2;
+            VBE = 0.8;
+            VCE = 0.2;
             }
             else
             {
@@ -99,7 +99,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             IB = (VCC - VBE - RE * IE) / (RB);
             IBmin = IC / hfe;
             VBC = VBE - VCE;
-            if(istransistor_PNP==false){ 
+            if(istransistor_PNP){ 
                 if (IB > IBmin && IB > 0 && IC > 0 && IE >= 0)
                     {
                 return true;
@@ -126,19 +126,13 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         {
             //using the kvl to find the vbe in original way so the following one will be commented and 
             //recalculated again
-            if(istransistor_PNP==false){
-
-                VBE = 0.7;
-            }
-            else{
-
-                VBE = -0.7;
-            }
+            if(istransistor_PNP==false){VBE = 0.7;}
+            else{VBE = -0.7;}
              
             IB = (VCC - VBE) / (RB);
-            
+            VBE = VCC-IB*RB;
             if(istransistor_PNP==false){         
-             if ( VCC==0 ||IB == 0) //Not Sure!
+             if (VBE < 0.7||IB == 0) //Not Sure!
             {
                 return true;
             }
@@ -149,7 +143,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             }
             else
             {
-                if (VCC == 0 || IB==0)
+                if (VBE > -0.7)
                 {
                     return true;
                 }
