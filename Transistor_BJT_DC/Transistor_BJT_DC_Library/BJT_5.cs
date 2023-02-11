@@ -119,8 +119,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                     return false;
                 }
             }
-
-
+            
         }
         public bool Check_CutOff_Mode()
         {
@@ -134,11 +133,10 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 VBE = -0.7;
             }
 
-            IB = (VCC - VBE) / (RB + ((beta + 1) * RE));
-            VBE = VCC - (IB * RB) - (IE * RE);
+            //IE
             if (istransistor_PNP == false)
             {
-                if (VBE < 0.7 || IB == 0)
+                if ( IE <= 0)
                 {
                     return true;
                 }

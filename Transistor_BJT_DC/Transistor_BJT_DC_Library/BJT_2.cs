@@ -125,11 +125,11 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             //assume that we are in the active mode
             if (istransistor_PNP == false)
             {
-                VBE = -0.7;
+                VBE = 0.7;
             }
             else
             {
-                VBE = 0.7;
+                VBE = -0.7;
             }
 
             IB = (VCC - VBE) / (RB + ((beta + 1) * RC)); // With considering IB . 

@@ -97,13 +97,10 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         {
             if (istransistor_PNP == false)
             {
-
                 //default in saturation mode
                 VBE = 0.8;
                 VCE = 0.2;
                 //default in saturation mode
-
-
             }
             else
             {
@@ -111,12 +108,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 VBE = -0.8;
                 VCE = -0.2;
                 //default in saturation mode
-
             }
-
-
-
-
             VTH = (VCC * RB2) / (RB1 + RB2);
             RTH = (RB1 * RB2) / (RB1 + RB2);
             IE = (VTH * RC - VBE * RC + RTH * VCC - VCE * RTH) / (RTH * RC + RE * RTH + RE * RC);
@@ -127,8 +119,6 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 
             if (istransistor_PNP == false)
             {
-
-
                 if (IB > IBmin && IB > 0 && IC > 0 && IE > 0)
                 {
                     return true;
@@ -137,7 +127,6 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 {
                     return false;
                 }
-
             }
             else
             {
@@ -149,18 +138,17 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 {
                     return false;
                 }
-
             }
-
         }
         public bool Check_CutOff_Mode()
         {
             if (istransistor_PNP == false)
             {
+                RTH = (RB1 * RB2) / (RB1 + RB2);
                 VBE = 0.7;
                 VTH = (VCC * RB2) / (RB1 + RB2);
-                VBE = VTH - IB * RB - (beta + 1) * IB * RE;
-                if (VBE < 0.7)
+                IE = (VTH - RTH * IB - VBE) / RE;
+                if (IE < 0)
                 {
                     return true;
                 }
@@ -171,10 +159,11 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             }
             else
             {
+                RTH = (RB1 * RB2) / (RB1 + RB2);
                 VBE = -0.7;
                 VTH = (VCC * RB2) / (RB1 + RB2);
-                VBE = VTH - IB * RB - (beta + 1) * IB * RE;
-                if (VBE > -0.7)
+                IE = (VTH - RTH * IB - VBE) / RE;
+                if (IE > 0)
                 {
                     return true;
                 }
