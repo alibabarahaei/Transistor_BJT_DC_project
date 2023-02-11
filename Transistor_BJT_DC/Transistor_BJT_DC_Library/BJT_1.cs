@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 {
-    public class BJT_1: BJT
+    public class BJT_1 : BJT
     {
         //check wether the transistor is pnp or npn
         public bool istransistor_PNP = false;
@@ -24,7 +18,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public double VBE;
 
         public double VB;
-    
+
         public double VBC;
         public double VCE;
         public double VCC;
@@ -43,10 +37,12 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             //default in active mode
             VBE = 0.7;
             //default in active mode
-            if (istransistor_PNP==false){
+            if (istransistor_PNP == false)
+            {
                 VBE = 0.7;
             }
-            else{
+            else
+            {
                 VBE = -0.7;
             }
             IB = (VCC - VBE) / (RB);
@@ -55,15 +51,16 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             VCE = (VCC) - (IC * RC) - (IE * RE);
             VC = (VCC) - (IC * RC);
             VE = IE * RE;
-            if (istransistor_PNP == false){
-            if (VCE >= 0.2 && IB > 0 && IC > 0 && IE >= 0)
+            if (istransistor_PNP == false)
             {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+                if (VCE >= 0.2 && IB > 0 && IC > 0 && IE >= 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -76,14 +73,15 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                     return false;
                 }
             }
-            
-    
+
+
         }
 
         public bool Check_Saturation_Mode()
         {
-            if(istransistor_PNP){ 
-            //default in saturation mode
+            if (istransistor_PNP)
+            {
+                //default in saturation mode
                 VBE = 0.8;
                 VCE = 0.2;
             }
@@ -99,15 +97,16 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             IB = (VCC - VBE - RE * IE) / (RB);
             IBmin = IC / hfe;
             VBC = VBE - VCE;
-            if(istransistor_PNP==false){ 
-                if (IB > IBmin && IB > 0 && IC > 0 && IE >= 0)
-                    {
-                return true;
-                    }
-            else
+            if (istransistor_PNP)
             {
-                return false;
-            }
+                if (IB > IBmin && IB > 0 && IC > 0 && IE >= 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -126,31 +125,27 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         {
             //using the kvl to find the vbe in original way so the following one will be commented and 
             //recalculated again
-            if(istransistor_PNP==false){
+            if (istransistor_PNP == false)
+            {
 
                 VBE = 0.7;
             }
-            else{
+            else
+            {
 
                 VBE = -0.7;
             }
-             
+
             IB = (VCC - VBE) / (RB);
-            
-            if(istransistor_PNP==false){         
-             if ( VCC==0 ||IB == 0) //Not Sure!
+
+            if (istransistor_PNP == false)
             {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-            }
-            else
-            {
-                if (VCC == 0 || IB==0)
+                if (VCC == 0 || IB == 0) //Not Sure!
                 {
+                    IB = 0;
+                    IC = 0;
+                    IE = 0;
+
                     return true;
                 }
                 else
@@ -158,7 +153,21 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                     return false;
                 }
             }
+            else
+            {
+                if (VCC == 0 || IB == 0)
+                {
+                    IB = 0;
+                    IC = 0;
+                    IE = 0;
 
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
 
         }
 

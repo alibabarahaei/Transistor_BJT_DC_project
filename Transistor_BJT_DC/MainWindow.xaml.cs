@@ -117,14 +117,27 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
                         });
                     }
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
+                        });
+                    }
+
 
                     answersDataGrid.ItemsSource = answers;
                 }
@@ -205,12 +218,24 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
+                        });
+                    }
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
                         });
                     }
 
@@ -290,14 +315,27 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
                         });
                     }
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
+                        });
+                    }
+
 
 
                     answersDataGrid.ItemsSource = answers;
@@ -374,15 +412,26 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
                         });
                     }
-
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
+                        });
+                    }
 
                     answersDataGrid.ItemsSource = answers;
                 }
@@ -455,14 +504,27 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
                         });
                     }
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
+                        });
+                    }
+
 
 
                     answersDataGrid.ItemsSource = answers;
@@ -535,14 +597,27 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
                         });
                     }
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
+                        });
+                    }
+
 
                     answersDataGrid.ItemsSource = answers;
                 }
@@ -627,14 +702,27 @@ namespace Transistor_BJT_DC
                     {
                         answers.Add(new answer()
                         {
-                            VBE = t.VBE.ToString("0.###") + ("V"),
-                            VCE = t.VCE.ToString("0.###") + ("V"),
+                            VBE = "-----",
+                            VCE = "-----",
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
                             Mode = "CutOff"
                         });
                     }
+                    else
+                    {
+                        answers.Add(new answer()
+                        {
+                            VBE = "-----",
+                            VCE = "-----",
+                            IB = "-----",
+                            IC = "-----",
+                            IE = "-----",
+                            Mode = "Reverse"
+                        });
+                    }
+
 
                     answersDataGrid.ItemsSource = answers;
                 }
