@@ -23,6 +23,8 @@ namespace Transistor_BJT_DC
             answersDataGrid.ItemsSource = answers;
             VEE_textBox.IsReadOnly = true;
             RB_textBox.IsReadOnly = true;
+            RB_textBox.Text = "--------";
+            VEE_textBox.Text = "--------";
         }
         private void exit(object sender, MouseButtonEventArgs e)
         {
@@ -71,7 +73,7 @@ namespace Transistor_BJT_DC
                 if (VCC_textBox.Text != "" && RB1_textBox.Text != "" && beta_textBox.Text != "" &&
                     RB2_textBox.Text != "" && RE_textBox.Text != "" && RC_textBox.Text != "")
                 {
-
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.RB1 = Convert.ToDouble(Convertor.converttokilo(RB1_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
@@ -120,7 +122,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 
@@ -158,6 +160,7 @@ namespace Transistor_BJT_DC
                 if (VCC_textBox.Text != "" && RB_textBox.Text != "" && beta_textBox.Text != "" &&
                      RE_textBox.Text != "" && RC_textBox.Text != "" && VEE_textBox.Text != "")
                 {
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
                     t.RE = Convert.ToDouble(Convertor.converttokilo(RE_textBox.Text));
@@ -207,7 +210,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 
@@ -243,6 +246,7 @@ namespace Transistor_BJT_DC
                 if (VCC_textBox.Text != "" && RB_textBox.Text != "" && beta_textBox.Text != "" &&
                      RE_textBox.Text != "" && RC_textBox.Text != "")
                 {
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
                     t.RE = Convert.ToDouble(Convertor.converttokilo(RE_textBox.Text));
@@ -291,7 +295,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 
@@ -326,6 +330,7 @@ namespace Transistor_BJT_DC
 
                 if (VCC_textBox.Text != "" && RB_textBox.Text != "" && beta_textBox.Text != "" && RE_textBox.Text != "" && RC_textBox.Text != "")
                 {
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
                     t.RE = Convert.ToDouble(Convertor.converttokilo(RE_textBox.Text));
@@ -374,7 +379,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 
@@ -384,7 +389,7 @@ namespace Transistor_BJT_DC
             }
             else if (B_N == 5)
             {
-                var t = new BJT_8();
+                var t = new BJT_2();
                 if (VCC_textBox.Text == "")
                 {
                     VCC_Icon.Visibility = Visibility.Visible;
@@ -407,6 +412,7 @@ namespace Transistor_BJT_DC
                 if (VCC_textBox.Text != "" && RB_textBox.Text != "" && beta_textBox.Text != "" &&
                     RC_textBox.Text != "")
                 {
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
                     t.RB = Convert.ToDouble(Convertor.converttokilo(RB_textBox.Text));
@@ -454,7 +460,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 
@@ -485,6 +491,7 @@ namespace Transistor_BJT_DC
                 if (VCC_textBox.Text != "" && RB_textBox.Text != "" && beta_textBox.Text != "" &&
                     RC_textBox.Text != "")
                 {
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
                     t.RE = Convert.ToDouble(Convertor.converttokilo(RE_textBox.Text));
@@ -533,7 +540,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 
@@ -574,6 +581,7 @@ namespace Transistor_BJT_DC
                 if (VCC_textBox.Text != "" && RB1_textBox.Text != "" && beta_textBox.Text != "" &&
                     RC_textBox.Text != "" && RE_textBox.Text != "" && RB2_textBox.Text != "" && VEE_textBox.Text != "")
                 {
+                    t.istransistor_PNP = mode_checkbox.IsChecked ?? false;
                     t.VCC = Convert.ToDouble(Convertor.converttokilo(VCC_textBox.Text));
                     t.beta = Convert.ToDouble(Convertor.converttokilo(beta_textBox.Text));
                     t.RE = Convert.ToDouble(Convertor.converttokilo(RE_textBox.Text));
@@ -624,7 +632,7 @@ namespace Transistor_BJT_DC
                             IB = t.IB.ToString("0.##") + ("mA"),
                             IC = t.IC.ToString("0.##") + ("mA"),
                             IE = t.IE.ToString("0.##") + ("mA"),
-                            Mode = "Saturation"
+                            Mode = "CutOff"
                         });
                     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "25p+f9QWcr+HsAe4hC+9Ksi0uWWyGrPD0ch6Vbt+M2Zju6tiRvlIi34bC6QjUkY0f5EWo61MJuXAkfUaaxStvA==",
+  "dgSpecHash": "zdCcopj9SHqNTiLc7P2ZVi7HEZGtRuA7FVTVyP5pS15/FUdLzN+ypD82IyYJyd1RkL3ivZoEtgPl7kxSv+1XmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\New folder (2)\\electronics\\Transistor_BJT_DC\\Transistor_BJT_DC.csproj",
+  "projectFilePath": "C:\\Users\\user\\Desktop\\New folder (6)\\Transistor_BJT_DC_project\\Transistor_BJT_DC\\Transistor_BJT_DC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\mahapps.metro.iconpacks\\4.11.0\\mahapps.metro.iconpacks.4.11.0.nupkg.sha512"
   ],

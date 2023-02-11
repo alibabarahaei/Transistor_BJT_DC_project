@@ -1,13 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 {
 
-    public class BJT_5: BJT
+    public class BJT_5 : BJT
     {
         public bool istransistor_PNP = false;
 
@@ -38,11 +32,12 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 
         public bool Check_Active_Mode()
         {
-            if (istransistor_PNP==false)
+            if (istransistor_PNP == false)
             {
                 VBE = 0.7;
 
-            }else
+            }
+            else
             {
                 VBE = -0.7;
             }
@@ -56,16 +51,16 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             VCE = (VCC) - (IC * RC) - (IE * RE); // With No TAGHRIB :)
             VC = (VCC) - (IC * RC);
             VE = IE * RE;
-            if (istransistor_PNP==false)
+            if (istransistor_PNP == false)
             {
-            if (VCE >= 0.2 && IB > 0 && IC > 0 && IE > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+                if (VCE >= 0.2 && IB > 0 && IC > 0 && IE > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -84,15 +79,15 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public bool Check_Saturation_Mode()
         {
             //default in saturation mode
-            if (istransistor_PNP==flse)
+            if (istransistor_PNP == false)
             {
-            VBE = 0.8;
-            VCE = 0.2;
+                VBE = 0.8;
+                VCE = 0.2;
             }
             else
             {
-            VBE = -0.8;
-            VCE = -0.2;
+                VBE = -0.8;
+                VCE = -0.2;
             }
 
             //default in saturation mode
@@ -102,16 +97,16 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             IE = (VCC - VBE - (IB * RB)) / (RE);
             IBmin = IC / hfe;
             VBC = VBE - VCE;
-            if (istransistor_PNP==false)
+            if (istransistor_PNP == false)
             {
-            if (IB > IBmin && IB > 0 && IC > 0 && IE > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+                if (IB > IBmin && IB > 0 && IC > 0 && IE > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
@@ -138,30 +133,30 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             {
                 VBE = -0.7;
             }
-           
+
             IB = (VCC - VBE) / (RB + ((beta + 1) * RE));
-            VBE = VCC - (IB*RB) - ( IE * RE );
-            if (istransistor_PNP==false)
+            VBE = VCC - (IB * RB) - (IE * RE);
+            if (istransistor_PNP == false)
             {
-            if (VBE < 0.7||IB == 0) 
-            {
-                return true;
+                if (VBE < 0.7 || IB == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             else
             {
-                return false;
-            }
-            }
-            else
-            {
-                if (VBE > -0.7||IB == 0 ) 
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+                if (VBE > -0.7 || IB == 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
 
 

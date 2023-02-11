@@ -1,16 +1,10 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 {
 
 
 
 
-    public class BJT_13: BJT
+    public class BJT_13 : BJT
     {
 
         public bool istransistor_PNP = false;
@@ -19,6 +13,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         //resistance
         public double RB1;
         public double RB2;
+        public double RB;
         public double RE;
         public double RC;
         public double RTH;
@@ -95,14 +90,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 
 
 
-            if (VCE >= 0.2 && IB > 0 && IC > 0 && IE > 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+
 
         }
         public bool Check_Saturation_Mode()
@@ -167,13 +155,11 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         }
         public bool Check_CutOff_Mode()
         {
-            
-
             if (istransistor_PNP == false)
             {
                 VBE = 0.7;
                 VTH = (VCC * RB2) / (RB1 + RB2);
-                VBE = VTH - IB*RB - (beta + 1 )*IB*RE;
+                VBE = VTH - IB * RB - (beta + 1) * IB * RE;
                 if (VBE < 0.7)
                 {
                     return true;
@@ -182,15 +168,12 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 {
                     return false;
                 }
-
-
-
             }
             else
             {
                 VBE = -0.7;
                 VTH = (VCC * RB2) / (RB1 + RB2);
-                VBE = VTH - IB*RB - (beta + 1 )*IB*RE;
+                VBE = VTH - IB * RB - (beta + 1) * IB * RE;
                 if (VBE > -0.7)
                 {
                     return true;
@@ -199,11 +182,8 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
                 {
                     return false;
                 }
-
             }
-
         }
-
     }
 
 
