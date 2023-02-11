@@ -1,9 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
 {
 
-    public class BJT_8 : BJT
+    public class BJT_8: BJT
     {
-        public bool istransistor_PNP = false;
         public double beta;
         public double hfe;
         //resistance
@@ -32,7 +37,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         public bool Check_Active_Mode()
         {
             //default in active mode
-            if (istransistor_PNP == false)
+            if (istransistor_PNP==false)
             {
                 VBE = 0.7;
             }
@@ -48,16 +53,16 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             VCE = (VCC) - ((beta + 1) / beta) * (IC) * (RC + RE); // With considering IB . 
             VC = (VCC) - ((beta + 1) / beta) * IC * RC; // Not Sure !
             VE = IE * RE;
-            if (istransistor_PNP == false)
+            if (istransistor_PNP==false)
             {
-                if (VCE >= 0.2 && IB > 0 && IC > 0 && IE > 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+            if (VCE >= 0.2 && IB > 0 && IC > 0 && IE > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
             }
             else
             {
@@ -132,7 +137,7 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
         }
         public bool Check_CutOff_Mode()
         {
-            if (istransistor_PNP == false)
+            if (istransistor_PNP==false)
             {
                 VBE = 0.7;
             }
@@ -140,29 +145,30 @@ namespace Transistor_BJT_DC.Transistor_BJT_DC_Library
             {
                 VBE = -0.7;
             }
+
             IB = (VCC - VBE) / (RB + (beta + 1) * (RC + RE));
-            VBE = VCC - (IC + IB) * RC - (IB * RB) - (IB + IC) * RE;
-            if (istransistor_PNP == false)
+
+            if (istransistor_PNP==false)
             {
-                if (VBE < 0.7 || IB == 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                if (VCC == 0||IB == 0) 
+            {
+                return true;
             }
             else
             {
-                if (VBE > -0.7 || IB == 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return false;
+            }
+            }
+            else
+            {
+                if (VCC == 0||IB == 0) 
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
             }
 
 
